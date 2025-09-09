@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Cat Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#facts">Cat Facts</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="facts">
+            <h2>Interesting Cat Facts</h2>
+            <ul>
+                <li>Cats sleep for 12-16 hours a day.</li>
+                <li>They have flexible bodies and sharp retractable claws.</li>
+                <li>Cats communicate through meows, purrs, and body language.</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Cat Gallery</h2>
+            <figure>
+                <img src="https://placekitten.com/400/300" alt="Cute Cat">
+                <figcaption>Fluffy and adorable!</figcaption>
+            </figure>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Breed</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Whiskers</td>
+                        <td>Siamese</td>
+                        <td>3 years</td>
+                    </tr>
+                    <tr>
+                        <td>Mittens</td>
+                        <td>Persian</td>
+                        <td>2 years</td>
+                    </tr>
+                    <tr>
+                        <td>Shadow</td>
+                        <td>Maine Coon</td>
+                        <td>4 years</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cat Preferences</legend>
+                    <label for="breed">Favorite Cat Breed:</label>
+                    <select id="breed" name="breed" required>
+                        <option value="">Select a breed</option>
+                        <option value="siamese">Siamese</option>
+                        <option value="persian">Persian</option>
+                        <option value="mainecoon">Maine Coon</option>
+                    </select>
+
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your favorite cat"></textarea>
+                </fieldset>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cat Showcase</p>
+    </footer>
+</body>
+</html>
